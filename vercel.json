@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/answer.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "api/answer.py"
+    }
+  ]
+}
