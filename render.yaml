@@ -1,10 +1,9 @@
 services:
   - type: web
-    name: tds-fastapi-app
+    name: tds-2025-05-project-1
     runtime: python
-    buildCommand: ""
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port 10000"
     envVars:
-      - key: UVICORN_PORT
+      - key: PORT
         value: 10000
-    plan: free
