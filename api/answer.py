@@ -24,6 +24,9 @@ from google import genai
 from google.genai.types import GenerateContentConfig
 
 app = FastAPI()
+@app.get("/")
+def read_root():
+    return {"message": "API is up and running!"}
 
 
 # ------------------- Rate Limiter -------------------
